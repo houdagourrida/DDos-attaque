@@ -5,7 +5,7 @@ from queue import Queue
 from optparse import OptionParser
 import time,sys,socket,threading,logging,urllib.request,random
 import time
-import progressbar
+
 
 
 def user_agent():
@@ -128,8 +128,6 @@ if __name__ == '__main__':
 		usage()
 	get_parameters()
 	print("[----- ", host," port: ",str(port)," turbo: ",str(thr),"-----]" )
-	for i in progressbar.progressbar(range(100)):
-             time.sleep(0.02)
 	print(" [----- S'il vous plaît, attendez . . . -----] ")
 	
 	user_agent()
